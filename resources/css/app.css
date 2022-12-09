@@ -1,0 +1,34 @@
+/* Ceci est un commentaire */
+
+body {
+    background-color: lightblue;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+header nav ul a{
+    background-color:rgb(55, 53, 50);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
+    padding: 1rem 2rem;
+    text-decoration: none;
+
+}
+
+h1{
+    font-size: 5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+img.medium-size {
+    width: 500px;
+}
