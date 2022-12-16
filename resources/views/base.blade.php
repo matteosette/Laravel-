@@ -19,7 +19,7 @@
                  <li> <a href="{{ route('reservation')}}">Reservation</a></li>
              </ul>
         </nav>
-    </header>
+</header>
     @section('content')
     @show
 </body>

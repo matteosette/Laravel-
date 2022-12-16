@@ -17,11 +17,18 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/hello', function () {
-    return view('hello');
+
+Route::get('/hello/{name}', function ($name) {
+
+    //   traitement des données 
+    $name = '"' .$name. '"';
+
+   return view('hello', [
+         // passage de variable à une vue 
+        'name' => $name,
+    ]); 
 })->name('hello');
 
-// @todo créer les routes pour les Pages Menu, Contact et Réservation  
 
 Route::get('/menu', function () {
     return view('menu');
