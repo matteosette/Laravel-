@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Faker;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,40 @@ class ReservationSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // 2 résa avec des données statique
+        // non Foo
+        // prénom Foo
+        // jour 06/01/2023
+        // heure 12:00
+        // tel 0612345678
+        // email foo.foo@example.com
+
+        // non Bar
+        // prénom Bar
+        // jour 13/01/2023
+        // heure 12:00
+        // tel 0634567812
+        // email bar.bar@example.com
+
+        // 48 résa avec des données aléatoire 
+
+        // nom 
+        $faker->lastName();
+
+        // prénom
+        $faker->firstName();
+
+        // jour 
+        $faker->date('Y-m-d');
+
+        // heure 
+        $faker->time('H:i');
+
+        // le nombre de personnes
+        // tel
+        $faker->phoneNumber();
+
+        // email
+        $faker->safeEmail();
     }
 }

@@ -21,9 +21,13 @@ class CategorieSeeder extends Seeder
         "boissons"];
 
         foreach ($categorieDatas as $categorieData){
+        // création d'une nouvelle catégorie
         $categorie = new Categorie();
+        // affectation d'un nom 
         $categorie->nom = "entrée";
+        // affecatation d'une description 
         $categorie->description = $faker->words(8, true);
+        // sauvegarde dans la BDD
         $categorie->save();
         }
     }
