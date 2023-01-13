@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1>Restaurant Foo</h1>
+<h1>O'cnamo</h1>
 <img class="medium-size" src="{{asset('img/image resto.jpg')}}" 
     alt="restau">
 @endsection 
