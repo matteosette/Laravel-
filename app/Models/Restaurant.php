@@ -9,6 +9,7 @@ class Restaurant extends Model
 {
     use HasFactory;
 
-     
+     protected $table = 'restaurant';
+     protected $primarykey = 'id';
 }
 
