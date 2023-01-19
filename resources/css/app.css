@@ -23,6 +23,7 @@ header nav ul a{
 
 h1{
     font-size: 5rem;
+    color: rgb(40, 40, 40);
 }
 
 img {
@@ -30,5 +31,5 @@ img {
 }
 
 img.medium-size {
-    width: 500px;
+    width: 1500px;
 }

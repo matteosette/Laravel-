@@ -42,7 +42,7 @@ class Plat extends Model
      */
     public function etiquettes()
     {
-        return $this->belongsTuMany(Etiquette::class);
+        return $this->belongsToMany(Etiquette::class);
 
     }
 }
